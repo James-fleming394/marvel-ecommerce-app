@@ -38,7 +38,8 @@ Images of website will go here
 
 # Diagrams
 
-CHD goes here
+## [Component Hierarchy Diagram](https://lucid.app/lucidchart/e36c44b7-2d17-4f25-a686-8103b6bee480/edit?viewport_loc=-238%2C40%2C2027%2C1005%2C0_0&invitationId=inv_dde0effb-4d55-4b14-81b1-4991998ec932)
+![Component Hierarchy Diagram](https://i.imgur.com/6QgoR1f.png)
 
 ERD goes here
 
