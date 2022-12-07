@@ -42,7 +42,8 @@ CHD goes here
 
 ERD goes here
 
-Trello goes here
+## [Trello Board](https://trello.com/b/yM1DIRqX/marvel-ecommerce-app)
+![Trello Board](https://i.imgur.com/iPxJd44.png)
 
 # Credits 
 
