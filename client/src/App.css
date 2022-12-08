@@ -67,6 +67,21 @@ body {
   transform: translateY(4px);
 }
 
+/* Navbar CSS */
+
+.navbar {
+  background-color: white;;
+  display: flex;
+}
+
+.marvel-logo {
+  width: 8%;
+}
+
+.cart {
+  width: 5%;
+}
+
 
 
 
