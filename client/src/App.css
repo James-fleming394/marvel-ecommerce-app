@@ -5,6 +5,7 @@ body {
   background: auto;
   background-size: cover;
   margin: 0;
+  padding-top: 60px;
 }
 
 .launchpad {
@@ -113,5 +114,9 @@ body {
   width: 2%;
 }
 
+/* Register CSS */
 
+.register {
+  background-color: grey;
+}
 
