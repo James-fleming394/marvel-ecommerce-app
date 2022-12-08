@@ -8,22 +8,22 @@ const Signup = () => {
             </div>
             <div className="register-form">
                 <form>
-                    <label htmlFor="username">Username</label>
+                    <label htmlFor="username">Username:</label>
                     <input 
                     type="text"
                     placeholder="Username"
-                    />
-                    <label htmlFor="email">Email</label>
+                    /> <br></br>
+                    <label htmlFor="email">Email:</label>
                     <input 
                     type="text"
                     placeholder="Email"
-                    />
-                    <label htmlFor="password">Password</label>
+                    /><br></br>
+                    <label htmlFor="password">Password:</label>
                     <input 
                     type="text"
                     placeholder="Password"
-                    />
-                    <button type="submit">Register</button>
+                    /> <br></br>
+                    <button className="register-button" type="submit">Register</button>
                 </form>
             </div>
         </div>

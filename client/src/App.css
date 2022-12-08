@@ -18,7 +18,7 @@ body {
   margin-left: 550px;
   padding: 50px;
   position: absolute;
-  opacity: 90%;
+  opacity: 95%;
   border: 5px red outset;
   border-radius: 100px;
   background-image: linear-gradient(
@@ -118,5 +118,75 @@ body {
 
 .register {
   background-color: grey;
+  text-align: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 550px;
+  padding: 50px;
+  position: absolute;
+  opacity: 95%;
+  border: 5px red outset;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    -45deg, 
+    rgb(210, 116, 116) 0%, 
+    rgb(255, 255, 255) 25%, 
+    rgb(221, 182, 182) 51%, 
+    rgb(246, 246, 246) 100%
+  );
+}
+
+.register:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.register-title {
+  font-size: x-large;
+}
+
+.register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  color: red;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px red outset;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.register-button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+.register-button:hover {
+  opacity: 1;
+}
+
+.register-button:active {
+  background-color: darkred;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
