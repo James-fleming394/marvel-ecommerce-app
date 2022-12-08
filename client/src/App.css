@@ -1,6 +1,71 @@
 /* Launchpad CSS */
 
+body {
+  background-image: url("/Users/james/ga_seir/projects/marvel-ecommerce-app/client/src/assets/img/marvel-background.jpg");
+  background: auto;
+  background-size: cover;
+  margin: 0;
+}
 
+.launchpad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  margin-top: 250px;
+  margin-left: 550px;
+  padding: 50px;
+  position: absolute;
+  opacity: 90%;
+  border: 5px red outset;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    -45deg, 
+    rgb(210, 116, 116) 0%, 
+    rgb(255, 255, 255) 25%, 
+    rgb(221, 182, 182) 51%, 
+    rgb(246, 246, 246) 100%
+  );
+}
+
+.launchpad:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.title {
+  font-size: 45px;
+  color: red;
+  margin-top: -40px;
+  margin-bottom: -15px;
+}
+
+.launch-button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+.launch-button:hover {
+  opacity: 1;
+}
+
+.launch-button:active {
+  background-color: darkred;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 
 
