@@ -70,8 +70,30 @@ body {
 /* Navbar CSS */
 
 .navbar {
-  background-color: white;;
-  display: flex;
+  background-color: lightgray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline-flex;
+}
+
+.navbar-links {
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  position: static;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+.navbar-link:hover {
+  background-color: darkgrey;
+  opacity: .7;
+  color: white;
 }
 
 .marvel-logo {

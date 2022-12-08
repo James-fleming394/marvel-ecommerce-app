@@ -6,8 +6,11 @@ import CART from '../assets/img/cart.png'
 const Navbar = () => {
     return (
         <div className="navbar">
-            <div className="navbar-logo">
-                <img href="/" className="marvel-logo" src={LOGO} alt="Marvel Logo" />
+            <div className="navbar-logo" href="/">
+                <img className="marvel-logo" src={LOGO} alt="Marvel Logo" />
+            </div>
+            <div className="search-bar">
+                
             </div>
             <div className="navbar-links">
             <Link className="navbar-link" to="/home">Home</Link>
