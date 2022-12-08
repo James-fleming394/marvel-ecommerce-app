@@ -31,6 +31,7 @@ This Web App is created by **James Fleming**.
 2. Axios
 3. CSS
 4. JWT Auth (Post-MVP Goal)
+5. Marvel API
 
 # Views 
 
@@ -39,7 +40,7 @@ Images of website will go here
 # Diagrams
 
 ## [Component Hierarchy Diagram](https://lucid.app/lucidchart/e36c44b7-2d17-4f25-a686-8103b6bee480/edit?viewport_loc=-238%2C40%2C2027%2C1005%2C0_0&invitationId=inv_dde0effb-4d55-4b14-81b1-4991998ec932)
-![Component Hierarchy Diagram](https://i.imgur.com/6QgoR1f.png)
+![Component Hierarchy Diagram](https://i.imgur.com/KUTaDYS.png)
 
 ## [Entity Relationship Diagram](https://lucid.app/lucidchart/81e94d8c-4cab-4497-8b6a-20276d52067b/edit?viewport_loc=-76%2C313%2C2011%2C997%2C0_0&invitationId=inv_8a6c2e6f-fa0f-4c16-bf64-9439b9b9b68a)
 ![Entity Realtionship Diagram](https://i.imgur.com/BuctUDs.png)
@@ -61,4 +62,4 @@ Images of website will go here
 
 [React Support](https://reactjs.org/community/support.html)
 
-[Marvel](https://www.marvel.com/)
+[Marvel API](https://developer.marvel.com/)
