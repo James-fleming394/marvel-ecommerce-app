@@ -2,15 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LOGO from '../assets/img/Marvel-Logo.png'
 import CART from '../assets/img/cart.png'
+import SEARCH from '../assets/img/search.png'
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar-logo" href="/">
                 <img className="marvel-logo" src={LOGO} alt="Marvel Logo" />
-            </div>
             <div className="search-bar">
-                
+                <form>
+                <input type="search" placeholder="Search Here..." />
+                <button className="search-button" type="submit"><img className="search-icon" src={SEARCH} alt="search"/></button>
+                </form>
+            </div>
             </div>
             <div className="navbar-links">
             <Link className="navbar-link" to="/home">Home</Link>
