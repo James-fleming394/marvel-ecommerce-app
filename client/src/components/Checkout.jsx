@@ -15,17 +15,22 @@ const Checkout = () => {
                 <Link className="wishlist" to="/cart">Shopping Bag(0)</Link>
                 <Link className="wishlist" to="/wishlist">Wishlist(0)</Link>
             </div>
-            <div className="shopping cart items">       
+            <div className="shopping-cart-items">       
                 <h2>Your Bag:</h2>
-                <section className="items">
+                <div className="items">
                     <h5>Product Name</h5>
                     <p>Product Id</p>
                     <img className="product-picture" src="" alt="Product picture"/>
                     <h6>Product Price</h6>
-                </section>
+                </div>
                 <section className="summary">
-                    <h2>Total Cost:</h2>
+                    <h2>Total Cost: Test</h2>
                 </section>
+                <div className="checkout-buttons">
+                <button className="continue-button">Continue Shopping</button>
+                <br></br>
+                <button className="purchase-button2">Checkout Now</button>
+                </div>
             </div>
         </div>
     )

@@ -126,9 +126,7 @@ body {
 /* Register CSS */
 
 .register {
-  background-color: grey;
   text-align: center;
-  background-color: white;
   margin: auto;
   width: 50%;
   opacity: 95%;
@@ -201,5 +199,30 @@ body {
 /* Cart CSS */
 
 .checkout {
+  margin: 30px;
+  padding: 30px;
   background-color: grey;
+  opacity: 95%;
+  border: 5px red outset;
+  background-image: linear-gradient(
+    -45deg, 
+    rgb(210, 116, 116) 0%, 
+    rgb(255, 255, 255) 25%, 
+    rgb(221, 182, 182) 51%, 
+    rgb(246, 246, 246) 100%
+  );
+}
+
+.checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bag-wishlist {
+  display: flex;
+  justify-content: space-around;
+}
+
+.summary, h2 {
+  width: 500%;
 }
