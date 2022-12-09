@@ -8,7 +8,7 @@ const ComicList = ({item}) => {
             <div className="comic-info">
                 <h2>{item.name}</h2>
                 <h3>{item.price}</h3>
-                <button>Add to Cart</button>
+                <button className="comic-button">Add to Cart</button>
             </div>
             </div>
         </div>

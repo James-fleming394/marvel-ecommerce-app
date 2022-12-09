@@ -355,3 +355,61 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* Comic Products Page */
+
+.comics-product-page {
+  background-color: whitesmoke;
+  margin: 35px 25px 0 25px;
+  opacity: .95;
+  border: 5px red outset;
+}
+
+.comics-product:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.comics-product {
+  padding-top: 35px;
+  display: flex;
+  margin: 5px;
+}
+
+.comics-image {
+  width: 250px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.comic-info {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.comic-button {
+  background-color: white;
+  border: none;
+  color: red;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px 2px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+.comic-button:hover {
+  opacity: 1;
+}
+
+.comic-button:active {
+  background-color: darkred;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
