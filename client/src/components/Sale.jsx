@@ -18,9 +18,9 @@ const Sale = () => {
                     <div className="sale-items">
                         <img src="https://m.media-amazon.com/images/I/61bbm-+wxwL._SX418_BO1,204,203,200_.jpg" alt="marvel book" />
                         <button>Shop Now</button>
-                        <img src="https://m.media-amazon.com/images/I/61bbm-+wxwL._SX418_BO1,204,203,200_.jpg" alt="marvel book" />
+                        <img src="https://m.media-amazon.com/images/I/61e8-nPFoZL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg" alt="marvel book" />
                         <button>Shop Now</button>
-                        <img src="https://m.media-amazon.com/images/I/61bbm-+wxwL._SX418_BO1,204,203,200_.jpg" alt="marvel book" />
+                        <img src="https://m.media-amazon.com/images/I/61VhOdqZWmL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg" alt="marvel book" />
                         <button>Shop Now</button>
                     </div>
                 </div>
