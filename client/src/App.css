@@ -262,6 +262,11 @@ body {
   font-weight: 500;
 }
 
+.sale-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .sale-pic {
   width: 300px;
 }
