@@ -12,12 +12,12 @@ const Login = () => {
                     <input 
                     type="text"
                     placeholder="Email"
-                    /><br></br>
+                    />
                 <label htmlFor="password">Password:</label>
                     <input 
                     type="text"
                     placeholder="Password"
-                    /> <br></br>
+                    />
                     <button className="register-button" type="submit">Signin</button>
                 </form>
             </div>

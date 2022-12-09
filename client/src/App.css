@@ -76,6 +76,7 @@ body {
   top: 0;
   width: 100%;
   display: inline-flex;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .navbar-links {
@@ -99,6 +100,9 @@ body {
 
 .marvel-logo {
   width: 8%;
+  padding: 5px;
+  padding-left: 40px;
+  padding-top: 10px;
 }
 
 .cart {
@@ -112,6 +116,11 @@ body {
 .search-button {
   height: 5%;
   width: 2%;
+}
+
+.search-bar-input {
+  margin-bottom: 2px;
+  margin-left: 5px;
 }
 
 /* Register CSS */
@@ -188,4 +197,6 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* Cart CSS */
 

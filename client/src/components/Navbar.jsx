@@ -11,7 +11,7 @@ const Navbar = () => {
                 <img className="marvel-logo" src={LOGO} alt="Marvel Logo" />
             <div className="search-bar">
                 <form>
-                <input type="search" placeholder="Search Here..." />
+                <input className="search-bar-input" type="search" placeholder="Search Here..." />
                 <button className="search-button" type="submit"><img className="search-icon" src={SEARCH} alt="search"/></button>
                 </form>
             </div>
