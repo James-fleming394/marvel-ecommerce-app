@@ -20,7 +20,7 @@ const Checkout = () => {
                 <div className="items">
                     <h5>Product Name</h5>
                     <p>Product Id</p>
-                    <img className="product-picture" src="" alt="Product picture"/>
+                    <img className="product-picture" src="" alt="Product example"/>
                     <h6>Product Price</h6>
                 </div>
                 <section className="summary">

@@ -226,3 +226,20 @@ body {
 .summary, h2 {
   width: 500%;
 }
+
+/* Home Page CSS */
+
+.home-page {
+  background-color: whitesmoke;
+  width: 90%;
+  opacity: .95;
+}
+
+.home-page2 {
+  background-color: whitesmoke;
+  width: 90%;
+  opacity: .95;
+
+  width: 90%;
+  margin-top: 50px;
+}
