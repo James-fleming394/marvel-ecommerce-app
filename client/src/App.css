@@ -120,10 +120,8 @@ body {
   background-color: grey;
   text-align: center;
   background-color: white;
-  margin-top: 100px;
-  margin-left: 550px;
-  padding: 50px;
-  position: absolute;
+  margin: auto;
+  width: 50%;
   opacity: 95%;
   border: 5px red outset;
   border-radius: 100px;
@@ -142,6 +140,7 @@ body {
 
 .register-title {
   font-size: x-large;
+  color: red;
 }
 
 .register-form {
