@@ -71,8 +71,8 @@ body {
 /* Navbar CSS */
 
 .navbar {
-  background-color: lightgray;
-  position: fixed;
+  background-color: whitesmoke;
+  position: absolute;
   top: 0;
   width: 100%;
   display: inline-flex;
@@ -427,3 +427,6 @@ body {
   justify-content: end;
   margin: 50px;
 }
+
+/* Footer CSS */
+

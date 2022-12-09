@@ -9,6 +9,7 @@ import Signin from './pages/Signin';
 import Cart from './pages/Cart';
 import Products from './pages/Products';
 import AllComicProducts from './components/ComicProducts';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         <Route path="/products-comics" element={<AllComicProducts />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
