@@ -231,15 +231,61 @@ body {
 
 .home-page {
   background-color: whitesmoke;
-  width: 90%;
   opacity: .95;
+  margin: 15px;
+  border: 5px red outset;
+  border-radius: 100px;
+  margin-top: 50px;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+
+.sale {
+  text-align: center;
+  color: red;
 }
 
 .home-page2 {
   background-color: whitesmoke;
-  width: 90%;
   opacity: .95;
+  margin: 15px;
+  border: 5px red outset;
+  border-radius: 100px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
 
-  width: 90%;
-  margin-top: 50px;
+.sale-pic {
+  width: 300px;
+}
+
+.sale-button {
+  background-color: black;
+  border: none;
+  color: red;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+.sale-button:hover {
+  opacity: 1;
+}
+
+.sale-button:active {
+  background-color: darkred;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
