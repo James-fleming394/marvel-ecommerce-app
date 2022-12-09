@@ -200,3 +200,6 @@ body {
 
 /* Cart CSS */
 
+.checkout {
+  background-color: grey;
+}
