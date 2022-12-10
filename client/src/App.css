@@ -14,9 +14,11 @@ body {
   align-items: center;
   text-align: center;
   background-color: white;
-  margin-top: 250px;
-  margin-left: 550px;
-  padding: 50px;
+  width: 50%;
+  margin-top: 6%;
+  margin-left: 18%;
+  height: 40vh;
+  padding: 90px;
   position: absolute;
   opacity: 95%;
   border: 5px red outset;

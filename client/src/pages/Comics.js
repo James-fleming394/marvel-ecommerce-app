@@ -3,7 +3,9 @@ import AllComicProducts from "../components/ComicProducts";
 
 const ComicsPage = () => {
     return (
-        <AllComicProducts />
+        <div>
+            <AllComicProducts />
+        </div>
     )
 }
 

@@ -1,5 +1,7 @@
 import React from "react";
 import ComicList from "./ComicList";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const AllComicProducts = () => {
     const comicProducts = [
@@ -31,9 +33,11 @@ const AllComicProducts = () => {
 
     return (
         <div>
+            <Navbar />
             {comicProducts.map(item => (
                 <ComicList item={item} key={item.id} />
             ))}
+            <Footer />
         </div>
     )
 }

@@ -13,7 +13,7 @@ const LaunchPad = () => {
                     <h1>Marvel Engine</h1>
                 </div>
                 <div>
-                    <button className="launch-button" onClick={() => navigate('/home')}><span>Enter Here  </span></button>
+                    <button className="launch-button" onClick={() => navigate('/home')}><span>Enter Here</span></button>
                 </div>
             </div>
         </div>
