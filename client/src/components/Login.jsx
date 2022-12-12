@@ -8,10 +8,10 @@ const Login = () => {
             </div>
             <div className="register-form">
                 <form>
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="username">Username</label>
                     <input 
                     type="text"
-                    placeholder="Email"
+                    placeholder="Username"
                     />
                 <label htmlFor="password">Password:</label>
                     <input 

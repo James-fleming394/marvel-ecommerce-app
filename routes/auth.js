@@ -19,6 +19,29 @@ router.post("/register", async (req, res) => {
     
 });
 
+// Login
+
+router.post("/login", async (req, res) => {
+    try {
+    const user = await User.findOne({ username: req.body.username });
+    !user && res.status(401).json("Username not found");
+
+    const hashedPassword = CryptoJS.AES.decrypt(
+        user.password,
+        process.env.PASSWORD_SECRET
+    );
+    const OriginalPassword = hashedPassword.toString();
+
+    OriginalPassword !== req.body.password &&
+        res.status(401).json("Password incorrect");
+
+    const { password, ...others } = user._test;
+
+    res.status(200).json({...others, accessToken});
+    } catch (err) {
+    res.status(500).json(err);
+    }
+});
 
 
 module.exports = router;
