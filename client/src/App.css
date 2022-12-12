@@ -368,6 +368,13 @@ body {
 
 /* Comic Products Page */
 
+.comic-view {
+  background-color: whitesmoke;
+  margin: 35px 25px 0 25px;
+  opacity: .95;
+  border: 5px red outset;
+}
+
 .comics-product-page {
   background-color: whitesmoke;
   margin: 35px 25px 0 25px;
