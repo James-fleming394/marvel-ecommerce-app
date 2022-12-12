@@ -21,9 +21,24 @@ const createProduct = async (req,res) => {
     console.log("New Product Created!")
 }
 
+const getCart = async (req, res) => {
+    const cart = await Cart.find().populate(['products'])
+    res.send(cart)
+}
+
+const deleteCart = async (req, res) => {
+    const { id } = req.params
+    const cart = await Cart.findByIdAndDelete(id)
+    res.send(cart)
+}
+
+
+
 
 module.exports = {
     getAllProducts,
     getProductById,
-    createProduct
+    createProduct,
+    getCart,
+    deleteCart
 }
