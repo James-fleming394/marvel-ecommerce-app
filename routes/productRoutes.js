@@ -2,6 +2,10 @@ const express = require("express");
 const router = express.Router();
 const controllers = require('../controllers/productControllers')
 
+router.get('/', (req, res) => {
+    res.send('Root page route functional')
+})
+
 //Comics 
 
 router.get('/comics', controllers.getAllComics )

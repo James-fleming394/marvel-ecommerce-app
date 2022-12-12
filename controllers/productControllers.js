@@ -2,9 +2,10 @@ const Comic = require("../models/Comic");
 
 const getAllComics = async (req, res) => {
     try {
-        const comic = await Comic.find({})
+        const allComics = await Comic.find()
+        
+        res.json({allComics})
 
-        res.json(comic);
     } catch (err) {
         res.status(500).json(err);
 
