@@ -12,4 +12,7 @@ router.get('/', (req, res) => {
 router.get('/products-comics', controllers.getAllComics)
 router.post('/products-comics', controllers.createComic)
 router.get('/products-comics/:id', controllers.getComicById)
+router.delete('/products-comic/:id', controllers.deleteComic)
 
+
+module.exports = router;
