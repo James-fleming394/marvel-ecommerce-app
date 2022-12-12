@@ -368,11 +368,24 @@ body {
 
 /* Comic Products Page */
 
+.sale-header {
+  background-color: whitesmoke;
+  margin: 35px 25px 0 25px;
+  opacity: .95;
+  border: 5px red outset;
+  color: red;
+  text-align: center;
+  font-size: 30px;
+}
+
 .comic-view {
   background-color: whitesmoke;
   margin: 35px 25px 0 25px;
   opacity: .95;
   border: 5px red outset;
+  color: red;
+  text-align: center;
+  font-size: 20px;
 }
 
 .comics-product-page {
@@ -435,6 +448,12 @@ body {
   display: flex;
   justify-content: flex-end;
   margin: 50px;
+}
+
+.add-comic {
+  display: grid;
+  padding: 10px;
+  justify-content: center;
 }
 
 /* Footer CSS */

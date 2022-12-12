@@ -26,17 +26,12 @@ const AllComicProducts = () => {
         apiCall();
     }, [])
 
-    const viewComic = (comic) => {
-        console.log(`${comic._id}`)
-        navigate(`/comics/${comic._id}`)
-    }
 
     const handleChange = (event) => {
         setFormState({...formState, [event.target.id]: event.target.value})
     }
 
     const handleSubmit = async (event) => {
-        event.preventDefault();
 
         let newComic = await axios.post(`http://localhost:5001/api/comics`, formState)
         .then((response) => {
@@ -58,10 +53,26 @@ const AllComicProducts = () => {
     return (
         <div>
             <Navbar />
+            <div className="sale-header">
+                <h1>Comics on Sale</h1>
+            </div>
+            <div className="comics-product-page" key={comics._id}>
+                {comics.map((comic) => (
+                    <div className="comics-product">
+                        <img className="comics-image" src={comic.img} alt="alt-comic-picture" />
+                        <div className="comic-info">
+                        <h2>{comic.name}</h2>
+                        <h3>{comic.price}</h3>
+                        <button className="comic-button">Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                ))}
+            </div>
             <div className="comic-view">
                 <div className="add-comic">
                     <h1>Add your Comic Here:</h1>
-                    <form onSubmit={handleSubmit}>
+                    <form className="comic-form" onSubmit={handleSubmit}>
                         <label htmlFor="name">Comic Name:</label>
                         <input
                         id="name"
@@ -69,35 +80,24 @@ const AllComicProducts = () => {
                         value={formState.name}
                         onChange={handleChange}
                         />
-                        <label htmlFor="name">Comic Cover:</label>
+                        <label htmlFor="img">Comic Cover:</label>
                         <input
                         id="img"
-                        placeholder="Type Here..."
+                        placeholder="Cover URL Here..."
                         value={formState.img}
                         onChange={handleChange}
                         />
-                        <label htmlFor="name">Comic Price:</label>
+                        <label htmlFor="price">Comic Price:</label>
                         <input
                         id="price"
                         placeholder="Type Here..."
                         value={formState.price}
                         onChange={handleChange}
                         />
-                        <button type="submit">Add Comic</button>
+                        <br></br>
+                        <button className="category-button" type="submit">Add Comic</button>
                     </form>
                 </div>
-            </div>
-            <div>
-                <h1>Comics on Sale</h1>
-            </div>
-            <div className="map" key={comics._id}>
-                {comics.map((comic) => (
-                    <div className="small-map" onClick={() => viewComic(comic)} key={comics._id}>
-                        <img src={comic.img} alt="alt-comic-picture" />
-                        <h2>{comic.name}</h2>
-                        <p>{comic.price}</p>
-                    </div>
-                ))}
             </div>
             <Footer />
         </div>
