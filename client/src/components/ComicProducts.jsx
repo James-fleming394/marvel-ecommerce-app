@@ -21,13 +21,13 @@ const AllComicProducts = () => {
             id: 9,
             name: "Ms. Marvel",
             img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kamala-khan-ms-marvel-1655221294.jpeg",
-            price: "$10"
+            price: "$8"
         },
         {
             id: 10,
             name: "The Avengers",
             img: "https://m.media-amazon.com/images/I/61VwDKyjtZL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
-            price: "$10"
+            price: "$12"
         },
     ]
 

@@ -4,12 +4,10 @@ import LaunchPad from './pages/LaunchPad.js';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import Signin from './pages/Signin';
 import Cart from './pages/Cart';
 import Products from './pages/Products';
 import AllComicProducts from './components/ComicProducts';
-import Footer from './components/Footer';
 
 function App() {
   return (
