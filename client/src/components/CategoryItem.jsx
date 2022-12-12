@@ -11,7 +11,7 @@ const CategoryItem = ({item}) => {
             <img className="category-image" src={item.img} alt="product" />
             <div className="info">
             <h1>{item.title}</h1>
-            <button className="category-button" onClick={() => navigate("/products-comics")}>Shop Now</button>
+            <button className="category-button" onClick={() => navigate("/comics")}>Shop Now</button>
             </div>
         </div>
         </div>

@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const logger = require("morgan");
 const db = require("./db");
-const routes = require('./routes');
-const controllers = require('./controllers');
+const routes = require('./routes/productRoutes')
+const productRoutes = require('./routes/productRoutes')
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -15,7 +15,12 @@ app.use(logger('dev'));
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-app.use('/api', routes);
+app.get('/', (req, res) => {
+    res.json({ message: "Server working"})
+})
+
+app.use('/api', routes)
+app.use('/comics', productRoutes )
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
