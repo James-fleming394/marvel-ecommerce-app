@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
@@ -23,6 +23,10 @@ const AllComicProducts = () => {
         }
         apiCall();
     }, [])
+
+    const showComic = (comic) => {
+        navigate(`/comics/${comic._id}`);
+    }
 
 
     const handleChange = (event) => {
@@ -48,13 +52,6 @@ const AllComicProducts = () => {
     }
 
 
-    const deleteComic = async (event) => {
-        event.preventDefault()
-        const response = await axios.delete(`http://localhost:5001/comics/`, formState)
-        navigate(`/comics`)
-    }
-
-
     return (
         <div>
             <Navbar />
@@ -68,9 +65,7 @@ const AllComicProducts = () => {
                         <div className="comic-info">
                         <h2>{comic.name}</h2>
                         <h3>{comic.price}</h3>
-                        <button className="comic-button">Add to Cart</button>
-                        <br></br>
-                        <button className="comic-button" onClick={deleteComic}>Delete Comic</button>
+                        <button className="comic-button" onClick={() => showComic(comic)} key={comics._id} >View More</button>
                         </div>
                     </div>
                 ))}

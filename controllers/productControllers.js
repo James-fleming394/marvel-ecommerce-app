@@ -14,12 +14,14 @@ const getAllComics = async (req, res) => {
 
 const getComicById = async (req, res) => {
     try {
-        const comic = await Comic.findById(req.params.id)
-
-        res.json(comic);
-    } catch (err) {
-        res.status(500).json(err);
-
+        const { id } = req.params;
+        const comic = await Comic.findById(id)
+    if (comic) {
+        return res.status(200).json({ comic })
+    }
+    return res.status(404).send('No Comic Found!')
+    } catch (error) {
+    return res.status(500).send(error.message)
     }
 }
 

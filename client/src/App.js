@@ -8,6 +8,7 @@ import Signin from './pages/Signin';
 import Cart from './pages/Cart';
 import Products from './pages/Products';
 import AllComicProducts from './components/ComicProducts';
+import ComicPage from './components/ComicPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Signin />} />
         <Route path="/products" element={<Products />} />
         <Route path="/comics" element={<AllComicProducts />} />
+        <Route path="/comics/:id" element={<ComicPage />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>
