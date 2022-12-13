@@ -305,8 +305,8 @@ body {
 .product-category {
   background-color: whitesmoke;
   display: inline-flex;
-  justify-content: space-evenly;
-  margin: 3px;
+  justify-content: space-around;
+  margin: 15px;
   height: 60vh;
   position: relative;
   margin-top: 150px;
@@ -319,6 +319,7 @@ body {
   width: 90%;
   height: 90%;
   object-fit: cover;
+  display: flex;
   margin: auto;
 }
 
