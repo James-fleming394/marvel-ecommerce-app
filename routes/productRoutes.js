@@ -22,5 +22,13 @@ router.post('/toys')
 router.put('/toys/:id')
 router.delete('/toys/:id')
 
+//Apparel
+
+router.get('/apparel')
+router.get('/apparel/:id')
+router.post('/apparel')
+router.put('/apparel/:id')
+router.delete('/apparel/:id')
+
 
 module.exports = router;
