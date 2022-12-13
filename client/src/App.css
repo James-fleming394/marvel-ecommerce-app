@@ -302,11 +302,6 @@ body {
 
 /* Products Page */
 
-.categories {
-  display: inline-block;
-  justify-content: space-between;
-}
-
 .product-category {
   background-color: whitesmoke;
   display: inline-flex;
@@ -316,7 +311,7 @@ body {
   position: relative;
   margin-top: 150px;
   border: 5px red outset;
-
+  cursor: pointer;
 }
 
 
@@ -327,7 +322,7 @@ body {
   margin: auto;
 }
 
-.info {
+.title-category {
   position: absolute;
   font-size: 25px;
   width: 90%;
@@ -337,7 +332,6 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .category-button {
