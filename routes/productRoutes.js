@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const controllers = require('../controllers/productControllers')
 const controller = require('../controllers/toyControllers')
+const control = require('../controllers/apparelControllers')
 
 router.get('/', (req, res) => {
     res.send('Root page route functional')
@@ -25,11 +26,11 @@ router.delete('/toys/:id', controller.deleteToy)
 
 //Apparel
 
-router.get('/apparel')
-router.get('/apparel/:id')
-router.post('/apparel')
-router.put('/apparel/:id')
-router.delete('/apparel/:id')
+router.get('/apparel', control.createApparel)
+router.get('/apparel/:id', control.getApparelById)
+router.post('/apparel', control.createApparel)
+router.put('/apparel/:id', control.updateApparel)
+router.delete('/apparel/:id', control.deleteApparel)
 
 
 module.exports = router;
