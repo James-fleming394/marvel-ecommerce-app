@@ -11,6 +11,7 @@ import AllComicProducts from './components/ComicProducts';
 import ComicPage from './components/ComicPage';
 import AllToyProducts from './components/ToyProducts';
 import ToyPage from './components/ToyPage';
+import AllApparelProducts from './components/ApparelProducts';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/comics/:id" element={<ComicPage />} />
         <Route path="/toys" element={<AllToyProducts />} />
         <Route path="/toys/:id" element={<ToyPage />} />
+        <Route path="/apparel" element={<AllApparelProducts />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>
