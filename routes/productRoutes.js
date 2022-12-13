@@ -14,6 +14,13 @@ router.post('/comics', controllers.createComic)
 router.put('/comics/:id', controllers.updateComic)
 router.delete('/comics/:id', controllers.deleteComic)
 
+//Toys
+
+router.get('/toys')
+router.get('/toys/:id')
+router.post('/toys')
+router.put('/toys/:id')
+router.delete('/toys/:id')
 
 
 module.exports = router;
