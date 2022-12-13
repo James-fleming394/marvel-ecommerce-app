@@ -26,7 +26,7 @@ router.delete('/toys/:id', controller.deleteToy)
 
 //Apparel
 
-router.get('/apparel', control.createApparel)
+router.get('/apparel', control.getAllApparel)
 router.get('/apparel/:id', control.getApparelById)
 router.post('/apparel', control.createApparel)
 router.put('/apparel/:id', control.updateApparel)

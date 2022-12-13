@@ -2,8 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const logger = require("morgan");
 const db = require("./db");
-const routes = require('./routes/productRoutes')
-const productRoutes = require('./routes/productRoutes')
+const routes = require('./routes/Routes')
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -20,7 +19,6 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api', routes)
-app.use('/comics', productRoutes )
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
