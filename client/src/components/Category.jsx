@@ -1,7 +1,11 @@
 import React from "react";
 import CategoryItem from "./CategoryItem";
+import { useNavigate } from "react-router-dom";
 
 const Category = () => {
+
+    let navigate = useNavigate();
+
     const categories = [
         {
             id: 1,
@@ -21,11 +25,18 @@ const Category = () => {
     ]
 
     return (
+        <>
         <div>
             {categories.map(item => (
-                <CategoryItem item={item} key={item.id}/>
+                <CategoryItem item={item} key={item.id} />
             ))}
         </div>
+        <div>
+                <button className="category-button" onClick={() => navigate("/comics")}>Shop Now</button>
+                <button className="category-button" onClick={() => navigate("/toys")}>Shop Now</button>
+                <button className="category-button" onClick={() => navigate("/apparel")}>Shop Now</button>
+        </div>
+            </>
     )
 }
 
