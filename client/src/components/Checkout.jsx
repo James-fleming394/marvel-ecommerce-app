@@ -2,14 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Checkout = () => {
+
     return (
         <div className="checkout">
             <div className="checkout-title">
                 <h1>Shopping Cart</h1>
-            </div>
-            <div className="checkout-buttons">
-                <button className="continue-button">Continue Shopping</button>
-                <button className="purchase-button">Checkout Now</button>
             </div>
             <div className="bag-wishlist">
                 <Link className="wishlist" to="/cart">Shopping Bag(0)</Link>
@@ -24,7 +21,7 @@ const Checkout = () => {
                     <h6>Product Price</h6>
                 </div>
                 <section className="summary">
-                    <h2>Total Cost: Test</h2>
+                    <h2>Total Cost: </h2>
                 </section>
                 <div className="checkout-buttons">
                 <button className="continue-button">Continue Shopping</button>

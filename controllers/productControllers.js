@@ -30,12 +30,22 @@ const createComic = async (req, res) => {
         res.json(newComic)
     } catch (err) {
         res.status(500).json(err);
+    }
+}
 
+const deleteComic = async (req, res) => {
+    try {
+        const { id } = req.params
+        const comic = await Comic.findByIdAndDelete(id)
+        res.send(comic)
+    } catch (err) {
+        res.status(500).json(err);
     }
 }
 
 module.exports = {
     getAllComics,
     getComicById,
-    createComic
+    createComic,
+    deleteComic
 }

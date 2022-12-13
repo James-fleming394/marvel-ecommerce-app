@@ -50,6 +50,13 @@ const AllComicProducts = () => {
     }
 
 
+    const deleteComic = async (event) => {
+        event.preventDefault()
+        const response = await axios.delete(`http://localhost:5001/comics/`, formState)
+        navigate(`/comics`)
+    }
+
+
     return (
         <div>
             <Navbar />
@@ -64,7 +71,8 @@ const AllComicProducts = () => {
                         <h2>{comic.name}</h2>
                         <h3>{comic.price}</h3>
                         <button className="comic-button">Add to Cart</button>
-                        
+                        <br></br>
+                        <button className="comic-button" onClick={deleteComic}>Delete Comic</button>
                         </div>
                     </div>
                 ))}
