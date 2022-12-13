@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const controllers = require('../controllers/productControllers')
+const controller = require('../controllers/toyControllers')
 
 router.get('/', (req, res) => {
     res.send('Root page route functional')
@@ -16,11 +17,11 @@ router.delete('/comics/:id', controllers.deleteComic)
 
 //Toys
 
-router.get('/toys')
-router.get('/toys/:id')
-router.post('/toys')
-router.put('/toys/:id')
-router.delete('/toys/:id')
+router.get('/toys', controller.getAllToys)
+router.get('/toys/:id', controller.getToyById)
+router.post('/toys', controller.createToy)
+router.put('/toys/:id', controller.updateToy)
+router.delete('/toys/:id', controller.deleteToy)
 
 //Apparel
 
