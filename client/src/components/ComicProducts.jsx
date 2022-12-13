@@ -3,28 +3,29 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const AllComicProducts = () => {
 
-    const [comics, showComics] = useState([]);
+    const [comics, showComic] = useState([]);
     const [formState, setFormState] = useState({
         name: '',
         img: '',
         price: ''
     })
-    
+
+    let { id } = useParams();
     let navigate = useNavigate();
 
     useEffect(() => {
         const apiCall = async () => {
             let response = await axios.get('http://localhost:5001/api/comics')
-            showComics(response.data.allComics)
+            showComic(response.data.allComics)
         }
         apiCall();
     }, [])
 
-    const showComic = (comic) => {
+    const viewComic = (comic) => {
         navigate(`/comics/${comic._id}`);
     }
 
@@ -43,7 +44,7 @@ const AllComicProducts = () => {
             console.log(error)
         })
 
-        showComics([...comics, newComic.data.newComic])
+        showComic([...comics, newComic.data.newComic])
         setFormState({
             name: '',
             img: '',
@@ -65,7 +66,7 @@ const AllComicProducts = () => {
                         <div className="comic-info">
                         <h2>{comic.name}</h2>
                         <h3>{comic.price}</h3>
-                        <button className="comic-button" onClick={() => showComic(comic)} key={comics._id} >View More</button>
+                        <button className="comic-button" onClick={() => viewComic(comic)} key={comics._id} >View More</button>
                         </div>
                     </div>
                 ))}

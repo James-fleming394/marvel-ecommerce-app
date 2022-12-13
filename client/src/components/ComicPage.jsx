@@ -33,6 +33,7 @@ const ComicPage = () => {
     }, []);
 
     const handleUpdate = async (event) => {
+        event.preventDefault();
         let response = await axios.put(`http://localhost:5001/api/comics/${id}`, formState)
         .then((response) => {
             return response;
@@ -50,51 +51,36 @@ const ComicPage = () => {
 
     const deleteComic = async (event) => {
         event.preventDefault()
-        const response = await axios.delete(`http://localhost:5001/comics/${id}`, formState)
+        let response = await axios.delete(`http://localhost:5001/api/comics/${id}`)
         setComic(response);
-        navigate(`/comics`)
     }
 
     return (
         <div>
             <Navbar />
-        <div className="comic-single" key={comics._id}>
-            <div className="comics-product">
-                        <img className="comics-image" src={comic.img} alt="picture" />
-                        <div className="comic-info">
-                        <h2>{comic.name}</h2>
-                        <h3>{comic.price}</h3>
-                        </div>
-            </div>
-        </div>
-        <div>
-            <form className="update-blog" onSubmit={handleUpdate}>
-                <label htmlFor='title'>New Title:</label>
-                <input id='title'
+        <div className="comic-view">
+            <form className="add-comic" onSubmit={handleUpdate}>
+            <h2>Update Form</h2>
+                <label htmlFor='name'>New Comic Name:</label>
+                <input id='name'
                     placeholder="Type Here..."
-                    value={formState.title}
+                    value={formState.name}
                     onChange={handleChange} />
-                <label htmlFor='author'>New Author:</label>
-                <input id='author'
-                    placeholder="Type Here..."
-                    value={formState.author}
-                    onChange={handleChange} />
-                <label htmlFor='description'>New Blog Content:</label>
-                <textarea id='body'
-                    placeholder="Type Here..."
-                    cols="50" rows="10"
-                    value={formState.body}
-                    onChange={handleChange} />
-                <label htmlFor='image'>Image URL:</label>
+                <label htmlFor='img'>New Comic Cover:</label>
                 <input id='img'
-                    placeholder="Insert Image URL Here..."
+                    placeholder="Cover URL Here..."
                     value={formState.img}
                     onChange={handleChange} />
-                <button type='submit'>Update Blog Now!</button>
+                <label htmlFor='price'>New Comic Price:</label>
+                <input id='price'
+                    placeholder="Type Here..."
+                    value={formState.price}
+                    onChange={handleChange} />
+                <button className="category-button" type='submit'>Update Comic Now!</button>
             </form>
             </div>
             <div>
-            <button className="deleteButton" onClick={deleteComic}>Delete this Comic!</button>
+            <button className="category-button" onClick={deleteComic}>Delete this Comic!</button>
             </div>
             <Footer />
         </div>

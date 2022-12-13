@@ -52,10 +52,13 @@ const updateComic = async (req, res) => {
 const deleteComic = async (req, res) => {
     try {
         const { id } = req.params
-        const comic = await Comic.findByIdAndDelete(id)
-        res.send(comic)
-    } catch (err) {
-        res.status(500).json(err);
+        const deletedComic = await Comic.findByIdAndDelete(id)
+        if (deletedComic) {
+            return res.status(200).send('Comic deleted')
+        }
+        throw new Error('Comic not found')
+    } catch (error) {
+        return res.status(500).send(error.message)
     }
 }
 
