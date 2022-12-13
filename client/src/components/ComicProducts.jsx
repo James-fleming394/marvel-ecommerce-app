@@ -1,10 +1,9 @@
 import React from "react";
-import ComicList from "./ComicList";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AllComicProducts = () => {
 
@@ -15,7 +14,6 @@ const AllComicProducts = () => {
         price: ''
     })
     
-    let { id } = useParams();
     let navigate = useNavigate();
 
     useEffect(() => {
@@ -66,7 +64,7 @@ const AllComicProducts = () => {
             <div className="comics-product-page" key={comics._id}>
                 {comics.map((comic) => (
                     <div className="comics-product">
-                        <img className="comics-image" src={comic.img} alt="alt-comic-picture" />
+                        <img className="comics-image" src={comic.img} alt="picture" />
                         <div className="comic-info">
                         <h2>{comic.name}</h2>
                         <h3>{comic.price}</h3>

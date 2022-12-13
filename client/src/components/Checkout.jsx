@@ -1,7 +1,12 @@
 import React from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Checkout = () => {
+
+
+    const navigate = useNavigate();
 
     return (
         <div className="checkout">
@@ -24,9 +29,9 @@ const Checkout = () => {
                     <h2>Total Cost: </h2>
                 </section>
                 <div className="checkout-buttons">
-                <button className="continue-button">Continue Shopping</button>
+                <button className="continue-button" onClick={() => navigate('/products')}>Continue Shopping</button>
                 <br></br>
-                <button className="purchase-button2">Checkout Now</button>
+                <button className="purchase-button2" onClick={() => alert('Thanks for shopping at Marvel Engine!')}>Checkout Now</button>
                 </div>
             </div>
         </div>
