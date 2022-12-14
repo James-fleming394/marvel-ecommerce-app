@@ -17,6 +17,7 @@ const Checkout = () => {
         setToys(response.data[response.data.length - 1].toys)
         setApparels(response.data[response.data.length - 1].apparels)
         setId(response.data[response.data.length - 1]._id)
+
     }
 
     useEffect(() => {

@@ -59,8 +59,14 @@ const ToyPage = () => {
         <div>
             <Navbar />
             <div className="comic-view">
+                <h1>Add or Delete </h1>
+            <button className="category-button" >Add Comic to Cart</button>
+            <br></br>
+            <button className="category-button" onClick={deleteToy}>Delete this Comic</button>
+            </div>
+            <div className="comic-view">
             <form className="add-comic" onSubmit={handleUpdate}>
-            <h2>Update Form</h2>
+            <h2 className="update-form">Update Form</h2>
                 <label htmlFor='name'>New Toy Name:</label>
                 <input id='name'
                     placeholder="Type Here..."
@@ -76,11 +82,9 @@ const ToyPage = () => {
                     placeholder="Type Here..."
                     value={formState.price}
                     onChange={handleChange} />
+                    <br></br>
                 <button className="category-button" type='submit'>Update Toy Now!</button>
             </form>
-            </div>
-            <div>
-            <button className="category-button" onClick={deleteToy}>Delete this Toy!</button>
             </div>
             <Footer />
         </div>
