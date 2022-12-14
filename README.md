@@ -31,11 +31,17 @@ This Web App is created by **James Fleming**.
 2. Axios
 3. CSS
 4. JWT Auth (Post-MVP Goal)
-5. Marvel API
+5. Marvel API (Post-MVP Goal)
 
 # Views 
 
-Images of website will go here
+### ![Home Page](https://i.imgur.com/LMOCokd.png)
+### ![Products Page](https://i.imgur.com/QkMAeLb.png)
+### ![Comics Page](https://i.imgur.com/pQGhOiO.png)
+### ![Toys Page](https://i.imgur.com/6W1OMkW.png)
+### ![Apparel Page](https://i.imgur.com/rxBQW6e.png)
+### ![Update Page Page](https://i.imgur.com/nmrzRgn.png)
+### ![Cart Page](https://i.imgur.com/9iFTVjo.png)
 
 # Diagrams
 
