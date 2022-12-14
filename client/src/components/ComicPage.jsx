@@ -58,9 +58,15 @@ const ComicPage = () => {
     return (
         <div>
             <Navbar />
+            <div className="comic-view">
+                <h1>Add or Delete </h1>
+            <button className="category-button" >Add Comic to Cart</button>
+            <br></br>
+            <button className="category-button" onClick={deleteComic}>Delete this Comic</button>
+            </div>
         <div className="comic-view">
             <form className="add-comic" onSubmit={handleUpdate}>
-            <h2>Update Form</h2>
+            <h2 className="update-form">Update Form</h2>
                 <label htmlFor='name'>New Comic Name:</label>
                 <input id='name'
                     placeholder="Type Here..."
@@ -76,11 +82,9 @@ const ComicPage = () => {
                     placeholder="Type Here..."
                     value={formState.price}
                     onChange={handleChange} />
-                <button className="category-button" type='submit'>Update Comic Now!</button>
+                    <br></br>
+                <button className="category-button" type='submit'>Update Comic Now</button>
             </form>
-            </div>
-            <div>
-            <button className="category-button" onClick={deleteComic}>Delete this Comic!</button>
             </div>
             <Footer />
         </div>

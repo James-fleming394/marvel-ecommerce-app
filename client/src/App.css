@@ -373,6 +373,12 @@ body {
   font-size: 30px;
 }
 
+.update-form {
+  display: flex;
+  justify-content: left;
+  padding-left: 40px;
+}
+
 .comic-view {
   background-color: whitesmoke;
   margin: 35px 25px 0 25px;
