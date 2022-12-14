@@ -47,17 +47,28 @@ const ComicPage = () => {
             img: '',
             price: ''
         })
+        navigate(`/comics`)
     }
 
     const deleteComic = async (event) => {
         event.preventDefault()
         let response = await axios.delete(`http://localhost:5001/api/comics/${id}`)
         setComic(response);
+        navigate(`/comics`)
     }
 
     return (
         <div>
             <Navbar />
+            <div className="comics-product-page" key={comics._id}>
+                    <div className="comics-product">
+                        <img className="comics-image" src={comic.img} alt="picture" />
+                        <div className="comic-info">
+                        <h2>{comic.name}</h2>
+                        <h3>{comic.price}</h3>
+                        </div>
+                    </div>
+            </div>
             <div className="comic-view">
                 <h1>Add or Delete </h1>
             <button className="category-button" >Add Comic to Cart</button>
