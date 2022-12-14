@@ -59,8 +59,14 @@ const ApparelPage = () => {
         <div>
             <Navbar />
             <div className="comic-view">
+                <h1>Add or Delete </h1>
+            <button className="category-button" >Add Apparel to Cart</button>
+            <br></br>
+            <button className="category-button" onClick={deleteApparel}>Delete this Apparel</button>
+            </div>
+            <div className="comic-view">
             <form className="add-comic" onSubmit={handleUpdate}>
-            <h2>Update Form</h2>
+            <h2 className="update-form">Update Form</h2>
                 <label htmlFor='name'>New Apparel Name:</label>
                 <input id='name'
                     placeholder="Type Here..."
@@ -78,9 +84,6 @@ const ApparelPage = () => {
                     onChange={handleChange} />
                 <button className="category-button" type='submit'>Update Apparel Now!</button>
             </form>
-            </div>
-            <div>
-            <button className="category-button" onClick={deleteApparel}>Delete this Piece!</button>
             </div>
             <Footer />
         </div>

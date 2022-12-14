@@ -60,9 +60,9 @@ const ToyPage = () => {
             <Navbar />
             <div className="comic-view">
                 <h1>Add or Delete </h1>
-            <button className="category-button" >Add Comic to Cart</button>
+            <button className="category-button" >Add Toy to Cart</button>
             <br></br>
-            <button className="category-button" onClick={deleteToy}>Delete this Comic</button>
+            <button className="category-button" onClick={deleteToy}>Delete this Toy</button>
             </div>
             <div className="comic-view">
             <form className="add-comic" onSubmit={handleUpdate}>

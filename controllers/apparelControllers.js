@@ -16,7 +16,7 @@ const getApparelById = async (req, res) => {
     try {
         const { id } = req.params;
         const apparel = await Apparel.findById(id)
-    if (comic) {
+    if (apparel) {
         return res.status(200).json({ apparel })
     }
     return res.status(404).send('No Apparel Found!')
